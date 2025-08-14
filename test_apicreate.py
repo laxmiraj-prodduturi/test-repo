@@ -5,6 +5,8 @@ def test_apicreate():
         "body": "pytest + requests",
         "userid": 1
               }
+
+    print("Laxmi")
     response = requests.post("https://jsonplaceholder.typicode.com/posts", json = payload)
     assert response.status_code == 201
     assert response.json()["title"] == "Learn Api Testing"
