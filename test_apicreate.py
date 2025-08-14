@@ -7,6 +7,7 @@ def test_apicreate():
               }
 
     print("Laxmi")
+    print("Hello world")
     response = requests.post("https://jsonplaceholder.typicode.com/posts", json = payload)
     assert response.status_code == 201
     assert response.json()["title"] == "Learn Api Testing"
